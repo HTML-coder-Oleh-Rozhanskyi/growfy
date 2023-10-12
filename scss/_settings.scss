@@ -8,15 +8,16 @@ html {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: clamp(14px, 2vw, 16px);
+	font-size: clamp(14px, 1.6vw, 16px);
 	// font-size: calc(var(--index) * 1.5);
 	line-height: 1.5;
 	font-weight: 400;
 	font-family: Poppins, "Helvetica Neue", Helvetica, sans-serif;
-	color: #fff;
+	color: var(--text);
 	background-color: var(--black);
 	&.menu-active {
 		overflow-y: hidden;
+		// padding-right: 10px;
 	}
 }
 [class*="__container"] {
@@ -30,7 +31,7 @@ html {
 	--title: #fff;
 	// --index: calc(1vw + 1vh);
 	--transition: 0.4s linear;
-	--font18px: clamp(16px, 2vw, 18px);
+	--font18px: clamp(16px, 1.6vw, 18px);
 }
 ::-webkit-scrollbar {
 	width: 10px;
@@ -41,4 +42,25 @@ html {
 ::-webkit-scrollbar-thumb {
 	border-radius: 10px;
 	background-color: var(--text);
+}
+
+.btn {
+	width: 160px;
+	height: 52px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #3d96f4;
+	color: var(--title);
+	border-radius: 50px;
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 2px;
+	transition: background-color var(--transition);
+	&:hover {
+		background-color: #2e70b6;
+	}
+}
+.btn--gray {
+	background: rgba(129, 129, 139, 0.2);
 }

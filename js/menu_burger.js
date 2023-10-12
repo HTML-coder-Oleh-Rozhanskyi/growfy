@@ -1,6 +1,5 @@
-/*
 function burger() {
-	const menuBtn = document.querySelector('.butger-btn');
+	const menuBtn = document.querySelector('.burger-btn');
 	const menuWrap = document.querySelector('.menu');
 	const menuLink = document.querySelectorAll('.menu__link');
 	const headerSite = document.querySelector('.header');
@@ -40,4 +39,4 @@ function burger() {
 	};
 };
 burger();
-*/
+
