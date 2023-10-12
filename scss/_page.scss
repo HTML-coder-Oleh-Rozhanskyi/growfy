@@ -1,0 +1,113 @@
+.page {
+	// .page__top
+	&__top {
+		padding-top: 160px;
+		padding-bottom: 90px;
+		@media (max-width: 1023.98px) {
+			padding-top: 130px;
+			padding-bottom: 70px;
+		}
+		@media (max-width: 767.98px) {
+			padding-top: 110px;
+			padding-bottom: 50px;
+		}
+	}
+}
+.top {
+	// .top__container
+	&__container {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		column-gap: 30px;
+		@media (max-width: 767.98px) {
+			flex-direction: column;
+			row-gap: 40px;
+		}
+	}
+	// .top__text-block
+	&__text-block {
+		flex-basis: 520px;
+		align-self: center;
+		display: flex;
+		flex-direction: column;
+		row-gap: 30px;
+		@media (max-width: 1023.98px) {
+			flex-basis: 50%;
+		}
+		@media (max-width: 767.98px) {
+			flex-basis: auto;
+		}
+	}
+	// .top__title
+	&__title {
+		font-size: clamp(30px, 4vw, 52px);
+		font-weight: 500;
+		line-height: 1.2;
+		color: var(--title);
+	}
+	// .top__text
+	&__text {
+		font-size: var(--font18px);
+	}
+	// .top__active
+	&__active {
+		display: flex;
+		column-gap: 30px;
+		@media (max-width: 374.98px) {
+			flex-direction: column;
+			row-gap: 30px;
+		}
+	}
+	// .top__btn
+	&__btn {
+		width: 100%;
+	}
+	// .top__img-block
+	&__img-block {
+		flex-shrink: 0;
+		align-self: center;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		align-items: start;
+		column-gap: 60px;
+		row-gap: 30px;
+		@media (max-width: 1319.98px) {
+			column-gap: 30px;
+		}
+		@media (max-width: 1023.98px) {
+			flex-shrink: 1;
+			flex-basis: 50%;
+		}
+		@media (max-width: 767.98px) {
+			max-width: 80%;
+			gap: 15px;
+		}
+		@media (max-width: 767.98px) {
+			max-width: 100%;
+		}
+	}
+	// .top__picture
+	&__picture {
+		overflow: hidden;
+		&:first-child {
+			border-radius: 378px;
+		}
+		&:nth-child(2) {
+			border-radius: 240px 0px 240px 240px;
+		}
+		&:nth-child(3) {
+			border-radius: 240px 240px 0px 240px;
+		}
+		&:last-child {
+			border-radius: 378px;
+			margin-top: -75%;
+		}
+	}
+	// .top__decor
+	&__decor {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}

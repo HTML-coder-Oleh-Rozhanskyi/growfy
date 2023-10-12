@@ -1,10 +1,6 @@
-/*
+
 function header() {
 	const header = document.querySelector('.header');
-	const experience = document.querySelector('.experience');
-	const headerHeight = header.offsetHeight;
-	const experienceHeight = experience.offsetHeight;
-	console.log(headerHeight)
 
 	window.addEventListener('scroll', () => {
 		let scrollDistance = window.scrollY;
@@ -28,5 +24,6 @@ function header() {
 	});
 };
 header();
-*/
+
+
 

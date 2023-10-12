@@ -21,7 +21,7 @@ html {
 	}
 }
 [class*="__container"] {
-	max-width: 1920px;
+	max-width: 1320px;
 	margin: 0 auto;
 	padding: 0 20px;
 }
@@ -48,7 +48,7 @@ html {
 }
 .btn {
 	width: 160px;
-	height: 52px;
+	min-height: 50px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -60,9 +60,16 @@ html {
 	letter-spacing: 2px;
 	transition: background-color var(--transition);
 	&:hover {
-		background-color: #2e70b6;
+		@media (any-hover) {
+			background-color: #153353;
+		}
 	}
 }
 .btn--gray {
 	background: rgba(129, 129, 139, 0.2);
+	&:hover {
+		@media (any-hover) {
+			background-color: rgb(63, 63, 66);
+		}
+	}
 }
