@@ -17,7 +17,7 @@ html {
 	background-color: var(--black);
 	&.menu-active {
 		overflow-y: hidden;
-		// padding-right: 10px;
+		padding-right: 10px;
 	}
 }
 [class*="__container"] {
@@ -35,6 +35,9 @@ html {
 }
 ::-webkit-scrollbar {
 	width: 10px;
+	@media (max-width: 767.98px) {
+		width: 5px;
+	}
 }
 ::-webkit-scrollbar-track {
 	background-color: transparent;
@@ -43,7 +46,6 @@ html {
 	border-radius: 10px;
 	background-color: var(--text);
 }
-
 .btn {
 	width: 160px;
 	height: 52px;
