@@ -1,13 +1,5 @@
 html {
-	box-sizing: border-box;
-	scroll-behavior: smooth;
 	scroll-padding-top: 20px;
-	height: 100%;
-}
-*,
-*::before,
-*::after {
-	box-sizing: inherit;
 }
 .body {
 	position: relative;
@@ -20,7 +12,7 @@ html {
 	// font-size: calc(var(--index) * 1.5);
 	line-height: 1.5;
 	font-weight: 400;
-	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-family: Poppins, "Helvetica Neue", Helvetica, sans-serif;
 	color: #fff;
 	background-color: var(--black);
 	&.menu-active {
@@ -33,9 +25,12 @@ html {
 	padding: 0 20px;
 }
 :root {
-	--black: #000;
-	--index: calc(1vw + 1vh);
+	--black: #0d0d11;
+	--text: #9c9c9c;
+	--title: #fff;
+	// --index: calc(1vw + 1vh);
 	--transition: 0.4s linear;
+	--font18px: clamp(16px, 2vw, 18px);
 }
 ::-webkit-scrollbar {
 	width: 10px;
@@ -45,5 +40,5 @@ html {
 }
 ::-webkit-scrollbar-thumb {
 	border-radius: 10px;
-	background-color: var(--black);
+	background-color: var(--text);
 }
