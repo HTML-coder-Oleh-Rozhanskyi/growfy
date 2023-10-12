@@ -3,30 +3,33 @@
 	&__top {
 		padding-top: 160px;
 		padding-bottom: 90px;
-		@media (max-width: 1023.98px) {
-			padding-top: 130px;
-			padding-bottom: 70px;
-		}
 		@media (max-width: 767.98px) {
 			padding-top: 110px;
-			padding-bottom: 50px;
+			padding-bottom: 60px;
+		}
+	}
+	// .page__about
+	&__about {
+		padding: 90px 0;
+		@media (max-width: 767.98px) {
+			padding: 60px 0;
 		}
 	}
 }
 .top {
 	// .top__container
 	&__container {
-		position: relative;
 		display: flex;
 		justify-content: space-between;
 		column-gap: 30px;
 		@media (max-width: 767.98px) {
 			flex-direction: column;
-			row-gap: 40px;
+			row-gap: 60px;
 		}
 	}
 	// .top__text-block
 	&__text-block {
+		position: relative;
 		flex-basis: 520px;
 		align-self: center;
 		display: flex;
@@ -106,8 +109,85 @@
 	}
 	// .top__decor
 	&__decor {
+		display: block;
 		position: absolute;
-		top: 0;
-		left: 0;
+		top: -15px;
+		left: -30px;
+		width: 122px;
+		height: 122px;
+		background: url(../img/svg/dotted_decor.svg) 0 0 no-repeat;
+	}
+}
+.about {
+	// .about__container
+	&__container {
+		display: flex;
+		align-items: center;
+		column-gap: 60px;
+		@media (max-width: 1023.98px) {
+			column-gap: 30px;
+		}
+	}
+	// .about__img-blok
+	&__img-blok {
+		position: relative;
+		flex-basis: 50%;
+		display: flex;
+		align-items: flex-end;
+		@media (max-width: 767.98px) {
+			display: none;
+		}
+	}
+	// .about__picture
+	&__picture {
+		overflow: hidden;
+		&:first-child {
+			border-radius: 378px 0px 378px 378px;
+		}
+		&:nth-child(2) {
+			border-radius: 180px 180px 180px 0px;
+		}
+	}
+	// .about__decor
+	&__decor {
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: -15px;
+		width: 122px;
+		height: 122px;
+		background: url(../img/svg/dotted_decor.svg) 0 0 no-repeat;
+	}
+	// .about__text-block
+	&__text-block {
+		flex-basis: 50%;
+		@media (max-width: 767.98px) {
+			flex-basis: auto;
+		}
+	}
+	// .about__text
+	&__text {
+		margin-bottom: 30px;
+	}
+	// .about__item-list
+	&__item-list {
+		display: flex;
+		align-items: center;
+		column-gap: 10px;
+		position: relative;
+		min-height: 30px;
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+		&::before {
+			content: "";
+			display: block;
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			background:
+				url(../img/svg/ico/arrow.svg) center/15px 15px no-repeat,
+				rgba(129, 129, 139, 0.1);
+		}
 	}
 }
