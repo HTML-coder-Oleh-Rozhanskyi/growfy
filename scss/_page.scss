@@ -8,7 +8,7 @@
 			padding-bottom: 60px;
 		}
 	}
-	// .page__about
+	&__services,
 	&__about {
 		padding: 90px 0;
 		@media (max-width: 767.98px) {
@@ -21,6 +21,7 @@
 	&__container {
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 		column-gap: 30px;
 		@media (max-width: 767.98px) {
 			flex-direction: column;
@@ -31,7 +32,6 @@
 	&__text-block {
 		position: relative;
 		flex-basis: 520px;
-		align-self: center;
 		display: flex;
 		flex-direction: column;
 		row-gap: 30px;
@@ -47,29 +47,31 @@
 		font-size: clamp(30px, 4vw, 52px);
 		font-weight: 500;
 		line-height: 1.2;
-		color: var(--title);
+		color: $title;
 	}
 	// .top__text
 	&__text {
-		font-size: var(--font18px);
+		font-size: $font18px;
 	}
 	// .top__active
 	&__active {
 		display: flex;
 		column-gap: 30px;
-		@media (max-width: 374.98px) {
+		@media (max-width: $sm) {
 			flex-direction: column;
 			row-gap: 30px;
 		}
 	}
 	// .top__btn
 	&__btn {
-		width: 100%;
+		@media (max-width: $sm) {
+			width: 80%;
+			align-self: center;
+		}
 	}
 	// .top__img-block
 	&__img-block {
 		flex-shrink: 0;
-		align-self: center;
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		align-items: start;
@@ -92,6 +94,7 @@
 	}
 	// .top__picture
 	&__picture {
+		transition: all ransition;
 		overflow: hidden;
 		&:first-child {
 			border-radius: 378px;
@@ -116,6 +119,117 @@
 		width: 122px;
 		height: 122px;
 		background: url(../img/svg/dotted_decor.svg) 0 0 no-repeat;
+	}
+}
+.services {
+	// .services__container
+	&__container {
+		display: grid;
+		grid-template-columns: 40% 50%;
+		justify-content: space-between;
+		align-items: center;
+		@media (max-width: 1279.98px) {
+			grid-template-columns: 40% 55%;
+			column-gap: 50px;
+		}
+		@media (max-width: $t) {
+			grid-template-columns: 1fr;
+		}
+		@media (max-width: $sm) {
+			row-gap: 50px;
+		}
+	}
+	// .services__text-block
+	&__text-block {
+		// max-width: 76%;
+		@media (max-width: $t) {
+			max-width: 100%;
+		}
+	}
+	// .services__btn
+	&__btn {
+		@media (max-width: $sm) {
+			width: 80%;
+			margin: 0 auto;
+		}
+	}
+	// .services__items-block
+	&__items-block {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		align-items: start;
+		gap: 30px;
+		@media (max-width: $sm) {
+			grid-template-columns: 1fr;
+		}
+	}
+	// .services__subitems
+	&__subitems {
+		&:first-child {
+			margin-top: 50px;
+			@media (max-width: $sm) {
+				margin-top: 0;
+			}
+		}
+	}
+	// .services__item
+	&__item,
+	.item-services {
+		border-radius: 30px;
+		background: rgba(129, 129, 139, 0.1);
+		padding: 50px 25px;
+		&:not(:last-child) {
+			margin-bottom: 30px;
+		}
+		@media (max-width: $m) {
+			padding: 30px;
+		}
+		// .item-services__img
+		&__img {
+			width: 70px;
+			height: 70px;
+			border-radius: 8px;
+			margin-bottom: 16px;
+			background-position: 50%;
+			background-size: 50px;
+			background-repeat: no-repeat;
+			@media (max-width: $m) {
+				width: 60px;
+				height: 60px;
+				background-size: 40px;
+			}
+		}
+		// .item-services__img--like
+		&__img--like {
+			background-image: url(../img/svg/ico/like.svg);
+			background-color: #17202b;
+		}
+		// .item-services__img--dolar
+		&__img--dolar {
+			background-image: url(../img/svg/ico/dolar.svg);
+			background-color: #271e1e;
+		}
+		// .item-services__img--letter
+		&__img--letter {
+			background-image: url(../img/svg/ico/letter.svg);
+			background-color: #262420;
+		}
+		// .item-services__img--search
+		&__img--search {
+			background-image: url(../img/svg/ico/search.svg);
+			background-color: #1d2423;
+		}
+		// .item-services__title
+		&__title {
+			color: $title;
+			font-size: 20px;
+			font-weight: 400;
+			margin-bottom: 10px;
+		}
+		// .item-services__text
+		&__text {
+			color: #81818b;
+		}
 	}
 }
 .about {
@@ -165,23 +279,23 @@
 			flex-basis: auto;
 		}
 	}
-	// .about__text
-	&__text {
-		margin-bottom: 30px;
-	}
 	// .about__item-list
 	&__item-list {
+		position: relative;
 		display: flex;
 		align-items: center;
-		column-gap: 10px;
 		position: relative;
 		min-height: 30px;
+		padding-left: 40px;
 		&:not(:last-child) {
 			margin-bottom: 20px;
 		}
 		&::before {
 			content: "";
-			display: block;
+			flex-shrink: 0;
+			position: absolute;
+			top: 0;
+			left: 0;
 			width: 30px;
 			height: 30px;
 			border-radius: 50%;
