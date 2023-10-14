@@ -63,7 +63,9 @@
 		color: #75757f;
 		transition: color $transition;
 		.footer__link-social:hover & {
-			color: #3d96f4;
+			@media (any-hover) {
+				color: #3d96f4;
+			}
 		}
 	}
 	// .footer__menu
