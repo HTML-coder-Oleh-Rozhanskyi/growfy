@@ -1,12 +1,13 @@
-/*document.addEventListener('DOMContentLoaded', () => {
-	const accordion = document.querySelectorAll('.accordion');
+/*
+document.addEventListener('DOMContentLoaded', () => {
+	const accordion = document.querySelectorAll('.footer__menu');
 	accordion.forEach(el => {
 		el.addEventListener('click', (e) => {
 			const self = e.currentTarget;
-			const control = self.querySelector('.accordion__btn');
-			const content = self.querySelector('.accordion__content');
-			self.classList.toggle('accordion--active');
-			if (self.classList.contains('accordion--active')) {
+			const control = self.querySelector('.menu__title');
+			const content = self.querySelector('.menu__list');
+			self.classList.toggle('footer__menu--active');
+			if (self.classList.contains('footer__menu--active')) {
 				control.setAttribute('aria-expanded', true);
 				content.setAttribute('aria-hidden', false);
 				content.style.maxHeight = content.scrollHeight + 'px';

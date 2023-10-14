@@ -10,15 +10,15 @@
 	}
 	&__services,
 	&__testimonials,
-	&__blog {
+	&__blog,
+	&__contacts {
 		padding: 90px 0;
 		@media (max-width: $t) {
 			padding: 60px 0;
 		}
 	}
 	&__about,
-	&__contain-about,
-	&__contacts {
+	&__contain-about {
 		padding: 90px 0;
 		@media (max-width: $t) {
 			padding: 50px 0;
