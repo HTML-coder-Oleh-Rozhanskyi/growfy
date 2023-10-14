@@ -17,7 +17,8 @@
 		}
 	}
 	&__about,
-	&__contain-about {
+	&__contain-about,
+	&__contacts {
 		padding: 90px 0;
 		@media (max-width: $t) {
 			padding: 50px 0;
@@ -285,7 +286,7 @@
 		overflow: hidden;
 		position: relative;
 		&:first-child {
-			border-radius: 1000px 0px 500px 500px;
+			border-radius: 700px 0px 400px 400px;
 			padding-bottom: 188%;
 		}
 		&:nth-child(2) {
@@ -494,7 +495,10 @@
 		}
 		// .item-testimonials__picture
 		&__picture {
+			flex: 0 0 70px;
 			overflow: hidden;
+			position: relative;
+			padding-bottom: 70px;
 		}
 		&__picture--first {
 			border-radius: 0 70px 70px 70px;
@@ -504,6 +508,16 @@
 		}
 		&__picture--third {
 			border-radius: 70px 70px 0 70px;
+		}
+
+		// .item-testimonials__img
+		&__img {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+			object-fit: cover;
 		}
 		// .item-testimonials__data
 		&__data {
@@ -663,6 +677,66 @@
 					text-decoration: underline;
 				}
 			}
+		}
+	}
+}
+.contacts {
+	// .contacts__wrap
+	&__wrap {
+		display: flex;
+		column-gap: 40px;
+		justify-content: space-around;
+		align-items: center;
+		border-radius: 30px;
+		background: rgba(129, 129, 139, 0.1);
+		padding: 40px;
+		@media (max-width: $t) {
+			padding: 30px;
+		}
+		@media (max-width: $m) {
+			flex-direction: column;
+			row-gap: 30px;
+		}
+		@media (max-width: $sm) {
+			justify-content: stretch;
+			align-items: stretch;
+		}
+	}
+	// .contacts__text-block
+	&__text-block {
+		flex-basis: 350px;
+		@media (max-width: $m) {
+			flex-basis: auto;
+		}
+	}
+	// .contacts__title
+	&__title {
+		color: $title;
+		font-size: clamp(26px, 2.5vw, 32px);
+		font-weight: 400;
+		margin-bottom: 16px;
+	}
+	// .contacts__active
+	&__active {
+		flex-basis: 350px;
+		display: flex;
+		column-gap: 30px;
+		@media (max-width: $m) {
+			flex-basis: auto;
+		}
+		@media (max-width: $sm) {
+			flex-direction: column;
+			row-gap: 20px;
+			align-items: center;
+		}
+	}
+	// .contacts__btn
+	&__btn {
+		@media (max-width: $sm) {
+			width: 80%;
+		}
+		@media (max-width: 359.98px) {
+			width: 100%;
 		}
 	}
 }
