@@ -49,7 +49,7 @@
 				<picture class="top__picture">
 					<source srcset="img/top/1.avif" type="image/avif">
 					<source srcset="img/top/1.webp" type="image/webp">
-					<img src="imgtop/1.jpg/" class="top__img" alt="#" width="240" height="420" loading="lazy">
+					<img src="img/top/1.jpg" class="top__img" alt="#" width="240" height="420" loading="lazy">
 				</picture>
 				<picture class="top__picture">
 					<source srcset="img/top/2.avif" type="image/avif">
@@ -111,12 +111,12 @@
 				<picture class="about__picture">
 					<source srcset="img/about/1.avif" type="image/avif">
 					<source srcset="img/about/1.webp" type="image/webp">
-					<img src="img/about/1.jpg" alt="#" width="420" height="780" loading="lazy">
+					<img class="about__img" src="img/about/1.jpg" alt="#" width="420" height="780" loading="lazy">
 				</picture>
 				<picture class="about__picture">
 					<source srcset="img/about/2.avif" type="image/avif">
 					<source srcset="img/about/2.webp" type="image/webp">
-					<img src="img/about/2.jpg" alt="#" width="180" height="180" loading="lazy">
+					<img class="about__img" src="img/about/2.jpg" alt="#" width="180" height="180" loading="lazy">
 				</picture>
 				<div class="about__decor"></div>
 			</div>
@@ -167,6 +167,178 @@
 			</div>
 		</div>
 	</div>
+	<section class="page__testimonials testimonials">
+		<div class="testimonials__container">
+			<div class="testimonials__header flex">
+				<div class="testimonials__text-block flex__text-block">
+					<h2 class="testimonials__title title">testimonials</h2>
+					<h3 class="testimonials__subtitle subtitle">See what our clients say</h3>
+					<p class="testimonials__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero. lorem</p>
+				</div>
+				<a href="#!" class="testimonials__btn btn flex__btn">Get in touch</a>
+			</div>
+			<div class="testimonials__items-block grid">
+				<article class="testimonials__item item-testimonials grid__item">
+					<div class="item-testimonials__header">
+						<picture class="item-testimonials__picture item-testimonials__picture--first">
+							<source srcset="img/testimonials/1.avif" type="image/avif">
+							<source srcset="img/testimonials/1.webp" type="image/webp">
+							<img src="img/testimonials/1.jpg" alt="#" width="70" height="70" loading="lazy">
+						</picture>
+						<div class="item-testimonials__data">
+							<span class="item-testimonials__name">John Doe</span>
+							<span class="item-testimonials__job">Company Name</span>
+						</div>
+					</div>
+					<h4 class="item-testimonials__title">"I recommend this agency"</h4>
+					<p class="item-testimonials__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero.</p>
+					<div class="item-testimonials__star">
+						<svg viewBox="0 0 20 20" role="img">
+							<use xlink:href="img/svg/sprite/sprite.svg#star"></use>
+						</svg>
+						<svg viewBox="0 0 20 20" role="img">
+							<use xlink:href="img/svg/sprite/sprite.svg#star"></use>
+						</svg>
+						<svg viewBox="0 0 20 20" role="img">
+							<use xlink:href="img/svg/sprite/sprite.svg#star"></use>
+						</svg>
+						<svg viewBox="0 0 20 20" role="img">
+							<use xlink:href="img/svg/sprite/sprite.svg#star"></use>
+						</svg>
+						<svg viewBox="0 0 20 20" role="img">
+							<use xlink:href="img/svg/sprite/sprite.svg#star"></use>
+						</svg>
+					</div>
+				</article>
+				<article class="testimonials__item item-testimonials grid__item">
+					<div class="item-testimonials__header">
+						<picture class="item-testimonials__picture item-testimonials__picture--second">
+							<source srcset="img/testimonials/2.avif" type="image/avif">
+							<source srcset="img/testimonials/2.webp" type="image/webp">
+							<img src="img/testimonials/2.jpg" alt="#" width="70" height="70" loading="lazy">
+						</picture>
+						<div class="item-testimonials__data">
+							<span class="item-testimonials__name">Alice Smith</span>
+							<span class="item-testimonials__job">Company Name</span>
+						</div>
+					</div>
+					<h4 class="item-testimonials__title">"The support is awesome"</h4>
+					<p class="item-testimonials__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero.</p>
+					<div class="item-testimonials__star">
+						<svg viewBox="0 0 20 20" role="img">
+							<use xlink:href="img/svg/sprite/sprite.svg#star"></use>
+						</svg>
+						<svg viewBox="0 0 20 20" role="img">
+							<use xlink:href="img/svg/sprite/sprite.svg#star"></use>
+						</svg>
+						<svg viewBox="0 0 20 20" role="img">
+							<use xlink:href="img/svg/sprite/sprite.svg#star"></use>
+						</svg>
+						<svg viewBox="0 0 20 20" role="img">
+							<use xlink:href="img/svg/sprite/sprite.svg#star"></use>
+						</svg>
+						<svg viewBox="0 0 20 20" role="img">
+							<use xlink:href="img/svg/sprite/sprite.svg#star"></use>
+						</svg>
+					</div>
+				</article>
+				<article class="testimonials__item item-testimonials grid__item">
+					<div class="item-testimonials__header">
+						<picture class="item-testimonials__picture item-testimonials__picture--third">
+							<source srcset="img/testimonials/3.avif" type="image/avif">
+							<source srcset="img/testimonials/3.webp" type="image/webp">
+							<img src="img/testimonials/3.jpg" alt="#" width="70" height="70" loading="lazy">
+						</picture>
+						<div class="item-testimonials__data">
+							<span class="item-testimonials__name">Sophia Miller</span>
+							<span class="item-testimonials__job">Company Name</span>
+						</div>
+					</div>
+					<h4 class="item-testimonials__title">“A game changer for us”</h4>
+					<p class="item-testimonials__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero.</p>
+					<div class="item-testimonials__star">
+						<svg viewBox="0 0 20 20" role="img">
+							<use xlink:href="img/svg/sprite/sprite.svg#star"></use>
+						</svg>
+						<svg viewBox="0 0 20 20" role="img">
+							<use xlink:href="img/svg/sprite/sprite.svg#star"></use>
+						</svg>
+						<svg viewBox="0 0 20 20" role="img">
+							<use xlink:href="img/svg/sprite/sprite.svg#star"></use>
+						</svg>
+						<svg viewBox="0 0 20 20" role="img">
+							<use xlink:href="img/svg/sprite/sprite.svg#star"></use>
+						</svg>
+						<svg viewBox="0 0 20 20" role="img">
+							<use xlink:href="img/svg/sprite/sprite.svg#star"></use>
+						</svg>
+					</div>
+				</article>
+			</div>
+		</div>
+	</section>
+	<section class="page__blog blog" id="blog">
+		<div class="blog__container">
+			<div class="blog__header flex">
+				<div class="blog__text-block flex__text-block">
+					<h2 class="blog__title title">Blog</h2>
+					<h3 class="blog__subtitle subtitle">Read our articles & news</h3>
+					<p class="blog__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero.</p>
+				</div>
+				<a href="#!" class="blog__btn btn flex__btn">All Posts</a>
+			</div>
+			<div class="blog__items-block grid">
+				<article class="blog__item item-blog grid__item">
+					<div class="item-blog__image-block">
+						<picture class="item-blog__picture">
+							<source srcset="img/blog/1.avif" type="image/avif">
+							<source srcset="img/blog/1.webp" type="image/webp">
+							<img class="item-blog__img" src="img/blog/1.jpg" alt="#" width="390" height="190" loading="lazy">
+						</picture>
+						<span class="item-blog__description">Social Media</span>
+					</div>
+					<div class="item-blog__text-block">
+						<time class="item-blog__data" datetime="2022-08-14">August 28, 2022</time>
+						<h4 class="item-blog__title">How to Use Social Proof in Marketing</h4>
+						<p class="item-blog__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero.</p>
+						<a href="#!" class="item-blog__btn">Read now</a>
+					</div>
+				</article>
+				<article class="blog__item item-blog grid__item">
+					<div class="item-blog__image-block">
+						<picture class="item-blog__picture">
+							<source srcset="img/blog/2.avif" type="image/avif">
+							<source srcset="img/blog/2.webp" type="image/webp">
+							<img class="item-blog__img" src="img/blog/2.jpg" alt="#" width="390" height="190" loading="lazy">
+						</picture>
+						<span class="item-blog__description">SEO</span>
+					</div>
+					<div class="item-blog__text-block">
+						<time class="item-blog__data" datetime="2022-08-14">August 28, 2022</time>
+						<h4 class="item-blog__title">Make a great first impression with these titles</h4>
+						<p class="item-blog__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero.</p>
+						<a href="#!" class="item-blog__btn">Read now</a>
+					</div>
+				</article>
+				<article class="blog__item item-blog grid__item">
+					<div class="item-blog__image-block">
+						<picture class="item-blog__picture">
+							<source srcset="img/blog/3.avif" type="image/avif">
+							<source srcset="img/blog/3.webp" type="image/webp">
+							<img class="item-blog__img" src="img/blog/3.jpg" alt="#" width="390" height="190" loading="lazy">
+						</picture>
+						<span class="item-blog__description">Strategy</span>
+					</div>
+					<div class="item-blog__text-block">
+						<time class="item-blog__data" datetime="2022-08-14">August 28, 2022</time>
+						<h4 class="item-blog__title">How to Grab Your Reader’s Attention</h4>
+						<p class="item-blog__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero.</p>
+						<a href="#!" class="item-blog__btn">Read now</a>
+					</div>
+				</article>
+			</div>
+		</div>
+	</section>
 </main> <footer class="footer">
   <div class="footer__container"></div>
 </footer>

@@ -1,6 +1,3 @@
-html {
-	scroll-padding-top: 20px;
-}
 $sm: 574.98px;
 $m: 767.98px;
 $t: 1023.98px;
@@ -9,6 +6,12 @@ $text: #9c9c9c;
 $title: #fff;
 $font18px: clamp(16px, 1.6vw, 18px);
 $transition: 0.4s linear;
+html {
+	scroll-padding-top: 70px;
+	@media (max-width: $m) {
+		scroll-padding-top: 20px;
+	}
+}
 .body {
 	position: relative;
 	overflow-x: clip;
